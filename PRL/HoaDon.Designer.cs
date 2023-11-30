@@ -141,7 +141,7 @@
             panel2.Controls.Add(label13);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(label6);
-            panel2.Location = new Point(273, 3);
+            panel2.Location = new Point(276, 3);
             panel2.Name = "panel2";
             panel2.Size = new Size(941, 923);
             panel2.TabIndex = 4;
