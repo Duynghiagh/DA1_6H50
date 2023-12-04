@@ -470,7 +470,7 @@
             panel_DangXuat.Name = "panel_DangXuat";
             panel_DangXuat.Size = new Size(291, 64);
             panel_DangXuat.TabIndex = 30;
-            panel_DangXuat.Paint += panel13_Paint;
+            panel_DangXuat.Click += panel_DangXuat_Click;
             panel_DangXuat.MouseDown += panel_DangXuat_MouseDown;
             // 
             // label12

@@ -29,63 +29,46 @@
         private void InitializeComponent()
         {
             panel_Thongke = new Panel();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtDoanhThuNgay = new TextBox();
+            txtSoLuongVeNgay = new TextBox();
             label3 = new Label();
-            dataGridView1 = new DataGridView();
+            dgvThongKe = new DataGridView();
             panel_Thongke.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvThongKe).BeginInit();
             SuspendLayout();
             // 
             // panel_Thongke
             // 
-            panel_Thongke.Controls.Add(textBox2);
-            panel_Thongke.Controls.Add(textBox1);
-            panel_Thongke.Controls.Add(button1);
+            panel_Thongke.Controls.Add(txtDoanhThuNgay);
+            panel_Thongke.Controls.Add(txtSoLuongVeNgay);
             panel_Thongke.Controls.Add(label3);
-            panel_Thongke.Controls.Add(dataGridView1);
+            panel_Thongke.Controls.Add(dgvThongKe);
             panel_Thongke.Location = new Point(2, 3);
             panel_Thongke.Name = "panel_Thongke";
             panel_Thongke.Size = new Size(923, 940);
             panel_Thongke.TabIndex = 0;
             // 
-            // textBox2
+            // txtDoanhThuNgay
             // 
-            textBox2.BackColor = Color.FromArgb(255, 188, 18);
-            textBox2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(10, 805);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(883, 46);
-            textBox2.TabIndex = 54;
-            textBox2.Text = "Doanh Thu Ngày:";
+            txtDoanhThuNgay.BackColor = Color.FromArgb(255, 188, 18);
+            txtDoanhThuNgay.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDoanhThuNgay.Location = new Point(10, 805);
+            txtDoanhThuNgay.Multiline = true;
+            txtDoanhThuNgay.Name = "txtDoanhThuNgay";
+            txtDoanhThuNgay.Size = new Size(883, 46);
+            txtDoanhThuNgay.TabIndex = 54;
+            txtDoanhThuNgay.Text = "Doanh Thu Ngày : ";
             // 
-            // textBox1
+            // txtSoLuongVeNgay
             // 
-            textBox1.BackColor = Color.FromArgb(255, 188, 18);
-            textBox1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(10, 740);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(883, 46);
-            textBox1.TabIndex = 54;
-            textBox1.Text = "Số lượng vé bán trong ngày :";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(112, 88, 61);
-            button1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.Vector_12;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(678, 125);
-            button1.Name = "button1";
-            button1.Size = new Size(123, 43);
-            button1.TabIndex = 50;
-            button1.Text = "Biểu đồ";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = false;
+            txtSoLuongVeNgay.BackColor = Color.FromArgb(255, 188, 18);
+            txtSoLuongVeNgay.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSoLuongVeNgay.Location = new Point(10, 740);
+            txtSoLuongVeNgay.Multiline = true;
+            txtSoLuongVeNgay.Name = "txtSoLuongVeNgay";
+            txtSoLuongVeNgay.Size = new Size(883, 46);
+            txtSoLuongVeNgay.TabIndex = 54;
+            txtSoLuongVeNgay.Text = "Số Lượng Vé Bán Trong Ngày : ";
             // 
             // label3
             // 
@@ -93,22 +76,23 @@
             label3.BackColor = Color.Gold;
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(6, 54);
+            label3.Location = new Point(205, 29);
             label3.Name = "label3";
             label3.Size = new Size(491, 32);
             label3.TabIndex = 49;
             label3.Text = "Doanh Thu Trong Ngày Và  Số Lượng Vé Bán";
+            label3.Click += label3_Click;
             // 
-            // dataGridView1
+            // dgvThongKe
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 184);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(917, 418);
-            dataGridView1.TabIndex = 0;
+            dgvThongKe.BackgroundColor = Color.White;
+            dgvThongKe.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvThongKe.Location = new Point(6, 184);
+            dgvThongKe.Name = "dgvThongKe";
+            dgvThongKe.RowHeadersWidth = 51;
+            dgvThongKe.RowTemplate.Height = 29;
+            dgvThongKe.Size = new Size(917, 418);
+            dgvThongKe.TabIndex = 0;
             // 
             // ThongKe
             // 
@@ -121,17 +105,16 @@
             Text = "ThongKe";
             panel_Thongke.ResumeLayout(false);
             panel_Thongke.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvThongKe).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel_Thongke;
-        private DataGridView dataGridView1;
-        private Button button1;
+        private DataGridView dgvThongKe;
         private Label label3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtDoanhThuNgay;
+        private TextBox txtSoLuongVeNgay;
     }
 }

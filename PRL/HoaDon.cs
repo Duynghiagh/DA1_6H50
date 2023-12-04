@@ -285,10 +285,6 @@ namespace PRL
         {
         }
 
-        private void panel13_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void label12_Click_1(object sender, EventArgs e)
         {
         }
@@ -675,6 +671,15 @@ namespace PRL
             Panel panel = TK.thongKe();
             panel2.Controls.Clear();
             panel2.Controls.Add(panel);
+        }
+
+        private void panel_DangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất không ?","Đăng xuất",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
