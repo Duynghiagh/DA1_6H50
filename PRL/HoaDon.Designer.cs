@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HoaDon));
             panel2 = new Panel();
-            dataGridView1 = new DataGridView();
+            dgvHoaDon = new DataGridView();
             btn_thanhToan = new Button();
             btn_xuatFilepdf = new Button();
             btn_nhapHoaDon = new Button();
@@ -93,7 +93,7 @@
             label19 = new Label();
             pictureBox15 = new PictureBox();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvHoaDon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             panel1.SuspendLayout();
@@ -125,7 +125,7 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(190, 0, 0);
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(dgvHoaDon);
             panel2.Controls.Add(btn_thanhToan);
             panel2.Controls.Add(btn_xuatFilepdf);
             panel2.Controls.Add(btn_nhapHoaDon);
@@ -149,17 +149,17 @@
             panel2.Paint += panel2_Paint;
             panel2.MouseClick += panel2_MouseClick;
             // 
-            // dataGridView1
+            // dgvHoaDon
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 585);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(947, 338);
-            dataGridView1.TabIndex = 50;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dgvHoaDon.BackgroundColor = Color.White;
+            dgvHoaDon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvHoaDon.Location = new Point(10, 574);
+            dgvHoaDon.Name = "dgvHoaDon";
+            dgvHoaDon.RowHeadersWidth = 51;
+            dgvHoaDon.RowTemplate.Height = 29;
+            dgvHoaDon.Size = new Size(918, 335);
+            dgvHoaDon.TabIndex = 50;
+            dgvHoaDon.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btn_thanhToan
             // 
@@ -895,7 +895,7 @@
             Load += HoaDon_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvHoaDon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             panel1.ResumeLayout(false);
@@ -954,7 +954,7 @@
         private Button btn_nhapHoaDon;
         private Button btn_luuHoaDon;
         private Button btn_xacNhan;
-        private DataGridView dataGridView1;
+        private DataGridView dgvHoaDon;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panel1;
         private Panel Panel_YeucauDichVu;

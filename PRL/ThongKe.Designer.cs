@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel_Thongke = new Panel();
+            txtDoanhThuDVNgay = new TextBox();
             txtDoanhThuNgay = new TextBox();
             txtSoLuongVeNgay = new TextBox();
             label3 = new Label();
@@ -39,6 +40,7 @@
             // 
             // panel_Thongke
             // 
+            panel_Thongke.Controls.Add(txtDoanhThuDVNgay);
             panel_Thongke.Controls.Add(txtDoanhThuNgay);
             panel_Thongke.Controls.Add(txtSoLuongVeNgay);
             panel_Thongke.Controls.Add(label3);
@@ -48,14 +50,25 @@
             panel_Thongke.Size = new Size(923, 940);
             panel_Thongke.TabIndex = 0;
             // 
+            // txtDoanhThuDVNgay
+            // 
+            txtDoanhThuDVNgay.BackColor = Color.FromArgb(255, 188, 18);
+            txtDoanhThuDVNgay.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDoanhThuDVNgay.Location = new Point(6, 785);
+            txtDoanhThuDVNgay.Multiline = true;
+            txtDoanhThuDVNgay.Name = "txtDoanhThuDVNgay";
+            txtDoanhThuDVNgay.Size = new Size(910, 46);
+            txtDoanhThuDVNgay.TabIndex = 55;
+            txtDoanhThuDVNgay.Text = "Doanh Thu Dịch Vụ : ";
+            // 
             // txtDoanhThuNgay
             // 
             txtDoanhThuNgay.BackColor = Color.FromArgb(255, 188, 18);
             txtDoanhThuNgay.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDoanhThuNgay.Location = new Point(10, 805);
+            txtDoanhThuNgay.Location = new Point(6, 713);
             txtDoanhThuNgay.Multiline = true;
             txtDoanhThuNgay.Name = "txtDoanhThuNgay";
-            txtDoanhThuNgay.Size = new Size(883, 46);
+            txtDoanhThuNgay.Size = new Size(910, 46);
             txtDoanhThuNgay.TabIndex = 54;
             txtDoanhThuNgay.Text = "Doanh Thu Ngày : ";
             // 
@@ -63,10 +76,10 @@
             // 
             txtSoLuongVeNgay.BackColor = Color.FromArgb(255, 188, 18);
             txtSoLuongVeNgay.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSoLuongVeNgay.Location = new Point(10, 740);
+            txtSoLuongVeNgay.Location = new Point(6, 643);
             txtSoLuongVeNgay.Multiline = true;
             txtSoLuongVeNgay.Name = "txtSoLuongVeNgay";
-            txtSoLuongVeNgay.Size = new Size(883, 46);
+            txtSoLuongVeNgay.Size = new Size(910, 46);
             txtSoLuongVeNgay.TabIndex = 54;
             txtSoLuongVeNgay.Text = "Số Lượng Vé Bán Trong Ngày : ";
             // 
@@ -116,5 +129,6 @@
         private Label label3;
         private TextBox txtDoanhThuNgay;
         private TextBox txtSoLuongVeNgay;
+        private TextBox txtDoanhThuDVNgay;
     }
 }
